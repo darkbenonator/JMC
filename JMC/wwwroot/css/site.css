@@ -35,3 +35,150 @@ textarea {
         display: none;
     }
 }
+
+
+
+
+
+
+@font-face {
+    font-family: c64font;
+    src: url('font/PetMe64.ttf');
+}
+
+html, body {
+    font-family: c64font;
+    font-size: 26px;
+    background: #7c71da;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#loadhold {
+    overflow: no-display;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.loadbar {
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+    width: 100%;
+}
+
+#allw {
+    width: 100%;
+    left: 0;
+    top: 13%;
+    z-index: 3;
+    position: absolute;
+}
+
+#csixintro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background: #3e31a2;
+    padding-top: 10px;
+    height: 700px;
+}
+
+#csixfour {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background: #3e31a2;
+    padding-top: 10px;
+    height: 700px;
+    display: none;
+}
+
+
+#csixtape {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background: #3e31a2;
+    padding-top: 10px;
+    height: 700px;
+    display: none;
+}
+
+#csixhs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background: #3e31a2;
+    padding-top: 10px;
+    height: 700px;
+    display: none;
+}
+
+#scorebit {
+    overflow: auto;
+    display: block;
+    height: 420px;
+    padding-left: 20px;
+    padding-right: 20px;
+    scrollbar-base-color: #3e31a2;
+}
+
+#ssimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 112px;
+    padding-right: 112px;
+    display: none;
+    background: #3e31a2;
+    height: 550px;
+}
+
+p {
+    line-height: 30px;
+    color: #7c71d9;
+    text-transform: Uppercase;
+}
+
+#uar {
+    line-height: 0px;
+}
+
+#head {
+    text-align: center;
+    width: 100%;
+}
+
+#endsec {
+    display: none;
+}
+
+.but {
+    font-family: c64font;
+    font-size: 26px;
+    background: #3e31a2;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    color: #7c71d9;
+    cursor: pointer;
+}
+
+.but1 {
+    font-family: c64font;
+    font-size: 26px;
+    background: #3e31a2;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    color: #7c71d9;
+    width: 1px;
+}
+
