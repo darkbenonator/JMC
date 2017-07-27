@@ -56,12 +56,12 @@ function gcol() {
 
 }
 
-function hidess() {
-    document.getElementById("csixfour").style.display = "none";
-    clearInterval(s2time);
+//function hidess() {
+//    document.getElementById("csixfour").style.display = "none";
+//    clearInterval(s2time);
 
 
-}
+//}
 
 function allcol() {
     document.getElementById("lb1").style.background = gcol();
@@ -167,51 +167,9 @@ function allcol() {
 
 }
 
-function showss() {
-    document.getElementById("ssimg").style.display = "block";
-
-    var it = Math.floor(Math.random() * 6);
-
-    document.getElementById("ssimg").innerHTML = "<img src='cimg/image" + it + ".gif' />";
-    clearInterval(s3time);
-
-    ittb = 9001;
 
 
-}
 
-function hidess1() {
-    document.getElementById("ssimg").style.display = "none";
-    document.getElementById("csixtape").style.display = "block";
-
-    document.getElementById("entx").focus();
-
-    rectime = setInterval("itlt++", 1000);
-    rectstime = setInterval("endlt(itt, ittb)", 30000);
-
-    clearInterval(s4time);
-    clearInterval(s5time);
-    clearInterval(scotime);
-
-
-}
-
-function recdone() {
-    document.getElementById("csixtape").style.display = "none";
-    document.getElementById("ssimg").style.display = "block"
-    clearInterval(rectime);
-    clearInterval(rectstime);
-
-    var itnp = 30000 - (30 * itlt);
-
-    ittb = ittb + itnp;
-
-    var lt = Math.floor(Math.random() * 40000);
-    s5time = setInterval("endlt(itt, ittb)", lt);
-
-    scotime = setInterval("itt++", 1000);
-
-}
 
 
 
@@ -219,19 +177,12 @@ function starttime() {
 
     var ltl = Math.floor(Math.random() * 20000) + 80000;
     var lt = Math.floor(Math.random() * 120000);
-    scotime = setInterval("itt++", 1000);
+    
     s1time = setInterval("allcol()", 10);
-    s2time = setInterval("hidess()", 20000);
-    s3time = setInterval("showss()", 40000);
-    s4time = setInterval("hidess1()", ltl);
+
 
 }
 
 starttime();
-
-var itt = 0;
-var itlt = 0;
-var ittb = 0;
-var noif = 0;
 
 
